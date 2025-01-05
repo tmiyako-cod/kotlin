@@ -1,7 +1,5 @@
 package org.example.scope
 
-import org.example.Person
-
 fun main() {
     val person = Person().apply {
         this.name = "Miyakon"

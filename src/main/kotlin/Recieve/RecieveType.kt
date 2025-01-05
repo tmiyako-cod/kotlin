@@ -1,4 +1,4 @@
-package org.example
+package org.example.Recieve
 
 // ラムダ式のレシーバー型
 val greet: String.() -> String = { "Hello, $this!" }

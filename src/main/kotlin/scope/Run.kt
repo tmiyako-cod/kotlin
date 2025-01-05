@@ -1,7 +1,5 @@
 package org.example.scope
 
-import org.example.Person
-
 val run_person = Person("Miyakon", 28)
 
 fun main() {

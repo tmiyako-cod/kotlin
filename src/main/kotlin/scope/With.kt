@@ -1,7 +1,5 @@
 package org.example.scope
 
-import org.example.Person
-
 val person = Person("Miyakon", 28)
 val person2 = Person("tatsu", 30)
 
