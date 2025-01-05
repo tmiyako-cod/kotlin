@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation(kotlin("test-junit"))
+    // reflectを使うための依存関係
+    implementation(kotlin("reflect"))
 }
 
 tasks.test {
