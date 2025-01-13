@@ -4,12 +4,13 @@ import reactor.core.publisher.Mono
 
 fun main(){
     // map 値の変換
-    // MonoやFluxのようなイベントではなく1つの値を返すことが前提
     val mapMono = Mono.just("Hello, World!")
         .map { it.uppercase()}
     mapMono.subscribe { println(it) }
 
     // flatMap 他のMonoを返す
+    // この例ではmapと同じになる
+    // TODO flatMapの使い方をもう少し理解する
     val flatMapMono = Mono.just("john")
         .flatMap { name -> Mono.just("Hello, $name") }
     flatMapMono.subscribe { println(it) }

@@ -28,6 +28,16 @@ fun main() {
         Thread.sleep(1000) //長い処理
         "Async Result"
     }
-
     asyncMono.subscribe { value -> println(value)}
+
+    val testMono = Mono.just("test init!")
+    testMono.subscribe(
+        { value -> println(value) },
+        { error -> println("Error: $error") },
+        { println("change!") }
+    )
+
+    // testMonoの値を変換
+    testMono.map { it.uppercase() }
+        .subscribe { value -> println(value) }
 }
