@@ -16,6 +16,8 @@ dependencies {
     implementation(kotlin("reflect"))
     // Project Reactorを使うための依存関係
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.2")
+    // kotlinx-coroutines-reactorを使うための依存関係
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.5.2")
 }
 
 tasks.test {
