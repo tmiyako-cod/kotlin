@@ -14,6 +14,8 @@ dependencies {
     testImplementation(kotlin("test-junit"))
     // reflectを使うための依存関係
     implementation(kotlin("reflect"))
+    // Project Reactorを使うための依存関係
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.2")
 }
 
 tasks.test {
